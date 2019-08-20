@@ -95,9 +95,15 @@ IncludeTemplateLangFile(__FILE__);
       <!-- breadcrumbs -->
       <div class="breadcrumbs-box">
           <div class="inner-wrap">
-              <a href="">Главная</a>
-              <a href="">Мебель</a>
-              <span>Выставки и события</span>
+            <?$APPLICATION->IncludeComponent(
+          	"bitrix:breadcrumb",
+          	"template1",
+          	Array(
+          		"PATH" => "",
+          		"SITE_ID" => "s1",
+          		"START_FROM" => "0"
+          	)
+          );?>
           </div>
       </div>
       <!-- /breadcrumbs -->
