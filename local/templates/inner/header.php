@@ -25,13 +25,16 @@ IncludeTemplateLangFile(__FILE__);
               </div>
               <div class="main-phone-block">
                   <a href="tel:84952128506" class="phone"><?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
-	)
+		"EDIT_TEMPLATE" => "",
+		"COMPONENT_TEMPLATE" => ".default",
+		"PATH" => "/file.php"
+	),
+	false
 );?></a>
                   <div class="shedule">время работы с 9-00 до 18-00</div>
               </div>
