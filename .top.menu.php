@@ -1,10 +1,17 @@
 <?
 $aMenuLinks = Array(
 	Array(
+		"Главная", 
+		"/", 
+		Array(), 
+		Array("class"=>"main-page"), 
+		"" 
+	),
+	Array(
 		"Компания", 
 		"company/", 
 		Array(), 
-		Array(), 
+		Array("text"=>"тут текст"), 
 		"" 
 	),
 	Array(
